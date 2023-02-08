@@ -8,4 +8,9 @@
     <?php wp_head();?> <!-- Il va ajouter du css, ajouter plusieurs éléments de notre entete sans structurer notre html-->
 </head>
 <body>
+    <header>
+        <h1><?php bloginfo('name'); ?></h1>
+        <h2><?php bloginfo('description'); ?></h2>
+        <h2><?php bloginfo('url'); ?></h2>
+    </header>
     
