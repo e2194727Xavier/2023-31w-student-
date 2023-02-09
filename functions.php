@@ -21,3 +21,13 @@ add_theme_support( 'custom-logo',
                         'height' => 150,
                         'width'  => 150,
                             ) );
+
+                    
+
+function enregistrement_des_menus(){
+    register_nav_menus( array(
+        'menu_entete' =>  'Menu entête' ,/* fonction de traduction */
+        'menu_footer'  => 'Menu pied de page' ,
+        ) );
+    }
+    add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
