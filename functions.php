@@ -8,3 +8,5 @@ function ajouter_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 
+/* ------------------------------------------------------------add theme support */
+add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
