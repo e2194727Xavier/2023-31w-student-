@@ -17,9 +17,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* =============== Normalize */
-@import 'normalize/normalize';
+@import "normalize/normalize";
+@import "normalize/boxsizing";
 
 /* ================Les fichier de base */
-@import 'base/heading';
-
-
+@import "base/heading";
