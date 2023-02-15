@@ -389,13 +389,22 @@ p {
 .menu-entete-container {
   background-color: black;
   padding: 20px;
+  flex-wrap: wrap;
 }
 .menu-entete-container .menu {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  flex: 1 0 50px;
 }
 .menu-entete-container .menu .menu-item a {
   text-decoration: none;
   color: white;
+  padding: 3px 5px;
+  font-size: 20px;
+}
+.menu-entete-container .menu .menu-item a:hover {
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
