@@ -1,4 +1,4 @@
-exercice #1 
+# gitexercice #1 
 
 ## Installation de wordpress et creation de theme
 ### Auteur : Xavier Paulin
