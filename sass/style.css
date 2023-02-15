@@ -90,7 +90,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -328,4 +329,4 @@ template {
 /* ================Les fichier de base */
 h1 {
   font-size: clamp(1rem, 0.25rem + 2.4vw, 3.25rem);
-}/*# sourceMappingURL=style.css.map */
+}
