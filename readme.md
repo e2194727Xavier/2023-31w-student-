@@ -8,3 +8,4 @@
 - Créer une structure Sass
 - Créer un minimum de 10 commits 
 - Déployer le site local vers un serveur distant. 
+- Site wordPress sur siteground : https://aecweb20.sg-host.com/
