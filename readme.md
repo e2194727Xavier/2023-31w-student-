@@ -1,4 +1,4 @@
-#exercice #2
+# exercice #2
 
 ## Améliorer la structure générale du thème
 ### Auteur : Xavier Paulin
