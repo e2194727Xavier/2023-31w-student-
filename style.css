@@ -386,10 +386,15 @@ p {
 }
 
 /* =============== Composant */
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-entete-container {
   background-color: black;
-  padding: 20px;
-  flex-wrap: wrap;
+  flex: 1;
 }
 .menu-entete-container .menu {
   list-style-type: none;
