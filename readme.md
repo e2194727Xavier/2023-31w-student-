@@ -1,11 +1,11 @@
-# exercice #1 
+# exercice #2
 
-## Installation de wordpress et creation de theme
+## Améliorer la structure générale du thème
 ### Auteur : Xavier Paulin
 #### Objectifs: 
-- Installer WP
-- Créer un theme simple
-- Créer une structure Sass
+- Formatter en scss l'affichage de fichier markdown
+- Créer des modèles pour afficher des archives d'article
+- Amélioration de module front-page.php
+- Créer un site adaptatif en utilisant l'approche mobile first
 - Créer un minimum de 10 commits 
-- Déployer le site local vers un serveur distant. 
-- Site wordPress sur siteground : https://aecweb20.sg-host.com/
+- Déployer le site local vers un serveur distant.   
