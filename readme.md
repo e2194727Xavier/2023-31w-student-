@@ -9,3 +9,4 @@
 - Créer un site adaptatif en utilisant l'approche mobile first
 - Créer un minimum de 10 commits 
 - Déployer le site local vers un serveur distant.   
+
