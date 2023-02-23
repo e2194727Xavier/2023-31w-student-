@@ -37,7 +37,6 @@ function enregistrement_des_menus(){
  * Dans ce cas çi nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
-<<<<<<< HEAD
 function cidweb_modifie_requete_principal($query)
 {
     if ($query->is_home() // si page d'accueil 
@@ -49,17 +48,3 @@ function cidweb_modifie_requete_principal($query)
     }
 }
 add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
-=======
-function cidweb_modifie_requete_principal( $query ) {
-if ( $query->is_home() 
-&& $query->is_main_query() 
-&& ! is_admin() ) {
-  $query->set( 'category_name', 'note-wp' );
-  $query->set( 'orderby', 'title' );
-  $query->set( 'order', 'ASC' );
-  }
- }
- add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
-
-
->>>>>>> 6ea07a957cff31d7e68a913acc6ccd27649ec40f
