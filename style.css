@@ -434,9 +434,15 @@ p {
 .blocflex article {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: 1px solid black;
-  border-radius: 8px;
   padding: 1rem;
-}/*# sourceMappingURL=style.css.map */
-article:hover{
-  box-shadow: rgba(11, 99, 199, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 10px;
 }
+.blocflex article:hover {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  border: none;
+}
+
+.recherche article {
+  background-color: azure;
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */

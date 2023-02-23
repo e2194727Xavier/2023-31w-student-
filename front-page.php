@@ -12,12 +12,11 @@
                 //the_content();
                 //the_excerpt();
         ?>
-                <a href="<?php the_permalink(); ?>">
-                    <article>
-                            <h3><?= get_the_title(); ?></h3>
-                        <p><?php echo wp_trim_words(get_the_excerpt(), 4); ?></p> <!-- Le nombre de mot que je veux après la premiere virgule, le troisieme arguement est optionnel  -->
-                    </article>
-                </a> 
+                <article>
+                    <h3><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h3>
+
+                    <p><?php echo wp_trim_words(get_the_excerpt(), 4); ?></p> <!-- Le nombre de mot que je veux après la premiere virgule, le troisieme arguement est optionnel  -->
+                </article>
             <?php endwhile; ?>
         <?php endif;
         ?>
