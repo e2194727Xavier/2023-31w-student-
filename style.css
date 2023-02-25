@@ -387,6 +387,67 @@ p {
   font-family: Roboto, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+main {
+  overflow: hidden;
+  padding: 30px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+a {
+  color: #0073aa;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #004266;
+}
+
+ul li,
+ol li {
+  margin: 0.5em 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f1f1f1;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.5em 0;
+}
+
 /* =============== Composant */
 .logomenu {
   display: flex;
@@ -414,7 +475,7 @@ p {
   font-size: 20px;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: blue;
+  color: #2196f3;
 }
 
 /* .blocflex {
@@ -441,12 +502,16 @@ p {
   border-radius: 10px;
 }
 .blocflex article:hover {
-  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 3px;
   border: none;
 }
 .blocflex h3 a {
   text-decoration: none;
 }
+.blocflex h3 a:hover {
+  color: #2196f3;
+}
+
 .recherche article {
   background-color: azure;
   margin: 10px;

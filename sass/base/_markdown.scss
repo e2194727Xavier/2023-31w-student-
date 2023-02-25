@@ -1,15 +1,64 @@
-ul,ol{}
-   
-   
-    strong, b {
 
-    }
-    em,i {
+main{
+    overflow: hidden;
+    padding: 30px;
+}
+h1,h2,h3{
+    text-align: center;
+}
+h1 a{
+    text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
+}
 
-    }
-    a {}
-   
-    ul li {}
-   
-    code{}
-    hr{}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+// Style pour mettre de l'emphase et italic
+em,
+i {
+  font-style: italic;
+}
+
+// Style pour les liens 
+a {
+  color: #0073aa;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #004266;
+}
+
+// Style liste d'item
+ul li,
+ol li {
+  margin: 0.5em 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+// Style pour code
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f1f1f1;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+}
+
+// Style pour boite
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.5em 0;
+}
