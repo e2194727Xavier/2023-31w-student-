@@ -16,6 +16,7 @@ Text Domain: 31w-xavier-paulin
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300;400;500;700;900&display=swap");
 /* =============== Normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -27,6 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: Roboto, sans-serif;
 }
 
 /* Sections
@@ -366,11 +368,11 @@ P {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Roboto "Times New Roman", serif;
   /*font-family: "Slackey", cursive; */
 }
 
@@ -378,11 +380,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Roboto, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* =============== Composant */
@@ -395,6 +397,7 @@ p {
 .menu-entete-container {
   background-color: black;
   flex: 1;
+  border-radius: 10px;
 }
 .menu-entete-container .menu {
   list-style-type: none;
@@ -441,7 +444,9 @@ p {
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
   border: none;
 }
-
+.blocflex h3 a {
+  text-decoration: none;
+}
 .recherche article {
   background-color: azure;
   margin: 10px;
