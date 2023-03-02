@@ -1,6 +1,6 @@
 <!-- modele index.php représente le modele par défaut  -->
 <?php get_header();?><!-- Il va récuperer le header -->
-<main>
+<main class="site__main">
     <h3>index.php</h3>
 <?php if (have_posts()):
         while(have_posts()): the_post();
@@ -11,7 +11,7 @@
             <?php
             //the_content();
             //the_excerpt();
-            echo wp_trim_words(get_the_excerpt(),4);/* Le nombre de mot que je veux après la premiere virgule, le troisieme arguement est optionnel */
+            echo wp_trim_words(get_the_excerpt(),5);/* Le nombre de mot que je veux après la premiere virgule, le troisieme arguement est optionnel */
         endwhile;
 endif;
 ?>

@@ -26,7 +26,7 @@
         if (isset($category)) {
             $lemenu = $category->slug;
         } else {
-            $lemenu = "notes-wp";
+            $lemenu = "note-wp";
         }
         wp_nav_menu(array(
             "menu" => $lemenu,
