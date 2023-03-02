@@ -18,13 +18,7 @@
   gap: 2rem;
   margin: 2rem;
 
-  article {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid black;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-
+  
   article:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 3px; ;
     border: none;
@@ -35,4 +29,15 @@
   h3 a:hover{
     color: #2196f3;
   }
+}
+
+.blocflex__article {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.blocflex__galerie{
+  flex: 1 0 100%
 }

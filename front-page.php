@@ -11,8 +11,12 @@
                 /* ============== */
                 //the_content();
                 //the_excerpt();
+        ?>       <?php if(in_category("galerie")){
+             get_template_part("template-parts/categorie","galerie");
+        
+            }else 
+            get_template_part("template-parts/categorie","note-wp");
         ?>
-                <?php get_template_part("template-parts/categorie","note-wp")?>
             <?php endwhile; ?>
         <?php endif;
         ?>
