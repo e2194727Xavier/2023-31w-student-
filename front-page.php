@@ -12,11 +12,7 @@
                 //the_content();
                 //the_excerpt();
         ?>
-                <article>
-                    <h3><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h3>
-
-                    <p><?php echo wp_trim_words(get_the_excerpt(), 15); ?></p> <!-- Le nombre de mot que je veux après la premiere virgule, le troisieme arguement est optionnel  -->
-                </article>
+                <?php get_template_part("template-parts/categorie","note-wp")?>
             <?php endwhile; ?>
         <?php endif;
         ?>
