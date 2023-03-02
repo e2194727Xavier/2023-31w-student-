@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head();?> <!-- Il va ajouter du css, ajouter plusieurs éléments de notre entete sans structurer notre html-->
 </head>
-<body>
+<body class="site">
     <header class="site__entete">
         <section class="logomenu">
         <?php the_custom_logo();?>
@@ -20,4 +20,18 @@
         <h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name'); ?></a></h1>
         <h2><?php bloginfo('description'); ?></h2>
     </header>
-    
+    <aside class="site__aside">
+        <h3>Menu secondaire</h3>
+        <?php $category = get_queried_object();
+        if (isset($category)) {
+            $lemenu = $category->slug;
+        } else {
+            $lemenu = "notes-wp";
+        }
+        wp_nav_menu(array(
+            "menu" => $lemenu,
+            "conteneur" => "nav"
+        )); ?>
+
+    </aside>
+
