@@ -1,5 +1,7 @@
 .site__entete{
 
+    margin-bottom: 20px;
+    padding: 0;
 
 }
 
@@ -15,13 +17,15 @@
     background-color: black;
     flex: 1;
     border-radius: 10px;
+
    
     
 
     .menu{ //ul
         list-style-type: none;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: flex-around;
         .menu-item{ //li
             flex:1 0 50px;
             a{

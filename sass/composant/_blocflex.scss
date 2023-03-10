@@ -1,26 +1,30 @@
-/* .blocflex {
+.blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  article {
-    margin: 10px;
-    padding: 5px;
-    border: 3px solid black;
-    flex: 1 0 300px;
-  }
-} */
+}
+.blocflex__article {
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid black;
+  flex: 1 0 300px;
+}
 
-.blocflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  // Cette déclaration sera meilleur quand min() sera mieux supporté
-  // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+/* .blocflex {
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  display: flex;
+   Cette déclaration sera meilleur quand min() sera mieux supporté
+   grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
   gap: 2rem;
   margin: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  
+} */
   article:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 3px; ;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 3px; 
+    transition: ease-in-out 0.3s;
     border: none;
   }
   h3 a{
@@ -29,10 +33,10 @@
   h3 a:hover{
     color: #2196f3;
   }
-}
+
 
 .blocflex__article {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.489) 0px 3px 8px;
   border: 1px solid black;
   padding: 1rem;
   border-radius: 10px;

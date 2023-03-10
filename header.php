@@ -5,33 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php wp_head();?> <!-- Il va ajouter du css, ajouter plusieurs éléments de notre entete sans structurer notre html-->
+    <?php wp_head(); ?>
 </head>
-<body class="site">
-    <header class="site__entete">
+<body class="site <?= (is_front_page() ? "no-aside" : "");  ?> ">
+    <header class="site__entete">  
         <section class="logomenu">
-        <?php the_custom_logo();?>
-        <?php wp_nav_menu(array(
-            'menu'  => 'entete',
-            'container' => 'nav',
-        ));?>
-        <?= get_search_form();?>
+            <?php the_custom_logo(); ?> 
+        
+                <?php wp_nav_menu(array(
+                    'menu' => 'entete',
+                    'container' => 'nav'
+                )); ?> 
+                <?= get_search_form(); ?>  
+        </section> 
+          
+        <section class="titre_entete">
+        <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
+        <h2><?php  bloginfo('description'); ?></h2>
         </section>
-        <h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name'); ?></a></h1>
-        <h2><?php bloginfo('description'); ?></h2>
     </header>
-    <aside class="site__aside">
-        <h3>Menu secondaire</h3>
-        <?php $category = get_queried_object();
-        if (isset($category)) {
-            $lemenu = $category->slug;
-        } else {
-            $lemenu = "note-wp";
-        }
-        wp_nav_menu(array(
-            "menu" => $lemenu,
-            "conteneur" => "nav"
-        )); ?>
-
-    </aside>
-
+    <?php 
+    if (is_front_page() == false)
+    {
+       get_template_part("template-parts/aside");
+    }
+     ?>
