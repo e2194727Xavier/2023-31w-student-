@@ -1,5 +1,19 @@
-.site__entete{
+.menusearch{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    
 
+    @media screen and (min-width: 1000px){
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+    }
+}
+
+.site__entete{
     margin-bottom: 20px;
     padding: 0;
 
@@ -33,6 +47,7 @@
                 color: white;  
                 padding:3px 5px;
                 font-size: 20px;
+                white-space: nowrap;
 
             }
             a:hover{
@@ -40,4 +55,9 @@
             }
         }
     }
+}
+
+.recherche{
+    display: flex;
+    flex-wrap: nowrap;
 }

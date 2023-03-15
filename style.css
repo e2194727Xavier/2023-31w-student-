@@ -449,6 +449,21 @@ hr {
 }
 
 /* =============== Composant */
+.menusearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1000px) {
+  .menusearch {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+}
+
 .site__entete {
   margin-bottom: 20px;
   padding: 0;
@@ -479,9 +494,15 @@ hr {
   color: white;
   padding: 3px 5px;
   font-size: 20px;
+  white-space: nowrap;
 }
 .menu-entete-container .menu .menu-item a:hover {
   color: #2196f3;
+}
+
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .blocflex {
@@ -510,7 +531,7 @@ hr {
 
 } */
 article:hover {
-  box-shadow: rgba(10, 9, 9, 0.3) 0px 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 3px;
   transition: ease-in-out 0.3s;
   border: none;
 }
@@ -524,7 +545,7 @@ h3 a:hover {
 }
 
 .blocflex__article {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.489) 0px 3px 8px;
   border: 1px solid black;
   padding: 1rem;
   border-radius: 10px;
@@ -534,7 +555,7 @@ h3 a:hover {
   flex: 1 0 100%;
 }
 
-.recherche article {
+.main__recherche article {
   background-color: azure;
   margin: 10px;
 }
@@ -551,6 +572,31 @@ h3 a:hover {
   min-width: 100%;
   background-color: black;
   color: white;
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  list-style-type: none;
+}
+.menu-cours-container .menu .menu-item a .cours__sigle {
+  padding: 3px;
+}
+.menu-cours-container .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours__titre {
+    display: block;
+  }
 }
 
 /* =============== Layout */
