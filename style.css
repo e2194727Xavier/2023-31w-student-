@@ -475,16 +475,49 @@ hr {
   align-items: center;
 }
 
+#chkbuger {
+  display: none;
+}
+
+#chkbuger:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
+.burger {
+  display: block;
+}
+@media screen and (min-width: 400px) {
+  .burger {
+    display: none;
+  }
+}
+
 .menu-entete-container {
   background-color: black;
   flex: 1;
   border-radius: 10px;
+  transform: translateX(300px);
+  transition: transform 0.25s;
+}
+@media screen and (min-width: 400px) {
+  .menu-entete-container {
+    transform: translateX(0);
+  }
 }
 .menu-entete-container .menu {
-  list-style-type: none;
   display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  justify-content: flex-around;
+}
+@media screen and (min-width: 400px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 .menu-entete-container .menu .menu-item {
   flex: 1 0 50px;
