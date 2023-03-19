@@ -1,5 +1,7 @@
 # TP1 (25 points)
 
+### Auteur: Xavier Paulin
+
 ###### L\'objectif du TP1 :
 
 - Créer une extension
