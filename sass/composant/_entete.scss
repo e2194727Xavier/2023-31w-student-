@@ -1,5 +1,5 @@
 .site__entete {
-
+    display: block;
 }
 .logomenu{
     display:flex;
@@ -13,6 +13,7 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end;
+
     
     @media screen and (min-width:1000px) {
         flex-direction: row;
@@ -37,9 +38,10 @@
 
 .menu-entete-container { // nav
     transform : translateX(300px);
-    transition : transform .25s;
+    transition : transform .25s;    
     @media screen and (min-width: 500px) {
-        transform : translateX(0);  
+        transform : translateX(0); 
+      
 }
 
 .menu { //ul 

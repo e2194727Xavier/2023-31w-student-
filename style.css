@@ -336,6 +336,11 @@ template {
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* ================Les fichier de base */
@@ -449,6 +454,10 @@ hr {
 }
 
 /* =============== Composant */
+.site__entete {
+  display: block;
+}
+
 .logomenu {
   display: flex;
   justify-content: space-between;
@@ -576,7 +585,7 @@ h3 a:hover {
   border-radius: 10px;
 }
 
-.blocflex__galerie {
+.blocflex .blocflex__galerie {
   flex: 1 0 100%;
 }
 
@@ -624,6 +633,33 @@ h3 a:hover {
   }
 }
 
+.menu-note-wp-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-note-wp-container .menu .menu-item {
+  list-style-type: none;
+}
+.menu-note-wp-container .menu .menu-item a .note__numero {
+  padding: 3px;
+}
+.menu-note-wp-container .menu .menu-item a .note__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu .menu-item a .note__titre {
+    display: block;
+  }
+}
+
 /* =============== Layout */
 /**
 Mise en page avec display: grid
@@ -651,6 +687,8 @@ Mise en page avec display: grid
 
 /* body ou un conteneur globale */
 .site {
+  width: 100vw;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
