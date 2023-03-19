@@ -10,6 +10,10 @@
   flex: 1 0 300px;
 }
 
+.blocflex__article > h5,h6{
+  text-align: center;
+}
+
 /* .blocflex {
    display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 

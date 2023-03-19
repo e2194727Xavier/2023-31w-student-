@@ -1,5 +1,8 @@
 .site__entete {
     display: block;
+    h2{
+        color: white;
+    }
 }
 .logomenu{
     display:flex;
@@ -50,10 +53,15 @@
     align-items: flex-end;
     justify-content: flex-start;
     list-style-type: none;
+    margin-right: 10px;
 @media screen and (min-width: 500px) {
     flex-direction : row;  
     justify-content: flex-end;
     align-items: center;
+    gap: 26px;
+    a{
+        color: #1e90ff;
+    }
 }
     
     
@@ -63,11 +71,12 @@
 
    .menu-item{ //li
     flex:1 0 50px;
-    list-style: none;;
+    list-style: none;
+    margin-left: 20px;
     a{
 
         text-decoration: none;
-        color: black;  
+        color: #0d5aa8;  
         padding:3px 5px;
         font-size: 20px;
         white-space: nowrap;
@@ -87,3 +96,6 @@
     flex-wrap: nowrap;
 }
 
+.custom-logo-link > img{
+    border-radius: 100px;
+}
