@@ -1,5 +1,7 @@
 # TP1 (25 points)
 
+### Auteur: Xavier Paulin
+
 ###### L\'objectif du TP1 :
 
 - Créer une extension
@@ -62,3 +64,5 @@
 2. Fonctionnement de l’extension carrousel, qualité du design, de l’intégration, des animations, organisation de la codification et adaptabilité **_(10 points)_**
 3. Organisation de l'entête, footer et partie principale. Qualité du design et de l’intégration des différents éléments de contenu. Notamment, les articles de notes de cours s'affichent de façon optimale. Les modèles: header.php, footer.php, category.php, front-page.php et single.php sont bien structurées et affichent l'information prévue. **_(5 points)_**
 4. Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. **_(5 points)_**
+
+https://aecweb20.sg-host.com/
