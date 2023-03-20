@@ -39,6 +39,28 @@
 }
 }
 
+
+.fermer {
+    display: none;
+}
+
+#chkBurger:checked ~ .fermer {
+    display: block;
+}
+
+#chkBurger:checked ~ .burger {
+    display: none;
+}
+
+#chkBurger:checked ~ .fermer {
+    display: block;
+    
+}
+
+#chkBurger:checked ~ .burger:checked + .fermer {
+    display: none;
+}
+
 .menu-entete-container { // nav
     transform : translateX(300px);
     transition : transform .25s;    

@@ -531,6 +531,26 @@ hr {
   }
 }
 
+.fermer {
+  display: none;
+}
+
+#chkBurger:checked ~ .fermer {
+  display: block;
+}
+
+#chkBurger:checked ~ .burger {
+  display: none;
+}
+
+#chkBurger:checked ~ .fermer {
+  display: block;
+}
+
+#chkBurger:checked ~ .burger:checked + .fermer {
+  display: none;
+}
+
 .menu-entete-container {
   transform: translateX(300px);
   transition: transform 0.25s;
@@ -655,6 +675,7 @@ h3 a:hover {
   min-width: 100%;
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 .menu-cours-container .menu {
