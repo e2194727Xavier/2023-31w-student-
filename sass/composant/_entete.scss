@@ -61,7 +61,7 @@
     display: none;
 }
 
-.menu-entete-container { // nav
+.menu-entete-container, { // nav
     transform : translateX(300px);
     transition : transform .25s;    
     @media screen and (min-width: 500px) {

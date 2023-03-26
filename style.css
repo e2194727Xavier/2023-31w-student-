@@ -485,6 +485,10 @@ hr {
   margin: 1.5em 0;
 }
 
+.invisible {
+  display: none;
+}
+
 /* =============== Composant */
 .site__entete {
   display: block;
@@ -678,28 +682,39 @@ h3 a:hover {
   text-align: center;
 }
 
-.menu-cours-container .menu {
+.menu-cours-container .menu, .menu-note-wp-container .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu {
+  .menu-cours-container .menu, .menu-note-wp-container .menu {
     flex-direction: column;
   }
 }
-.menu-cours-container .menu .menu-item {
+.menu-cours-container .menu .menu-item, .menu-note-wp-container .menu .menu-item {
   list-style-type: none;
   margin-left: 20px;
 }
-.menu-cours-container .menu .menu-item a .cours__sigle {
-  padding: 3px;
+.menu-cours-container .menu .menu-item a, .menu-note-wp-container .menu .menu-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
 }
-.menu-cours-container .menu .menu-item a .cours__titre {
+.menu-cours-container .menu .menu-item a .cours__sigle, .menu-note-wp-container .menu .menu-item a .cours__sigle {
+  padding: 1px 3px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours__sigle, .menu-note-wp-container .menu .menu-item a .cours__sigle {
+    padding: 3px;
+  }
+}
+.menu-cours-container .menu .menu-item a .cours__titre, .menu-note-wp-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu .menu-item a .cours__titre {
+  .menu-cours-container .menu .menu-item a .cours__titre, .menu-note-wp-container .menu .menu-item a .cours__titre {
     display: block;
   }
 }
@@ -777,7 +792,6 @@ Mise en page avec display: grid
 
 .no-aside {
   grid-template-areas: "header" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .no-aside {
