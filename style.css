@@ -619,6 +619,7 @@ hr {
   padding: 5px;
   border: 3px solid black;
   flex: 1 0 300px;
+  position: relative;
 }
 
 .blocflex__article > h5, h6 {
@@ -643,7 +644,7 @@ article.blocflex__article:hover {
   border: none;
 }
 
-h3 a {
+h3 a, h5 a {
   text-decoration: none;
 }
 
@@ -656,6 +657,7 @@ h3 a:hover {
   border: 1px solid black;
   padding: 1rem;
   border-radius: 10px;
+  position: relative;
 }
 
 .blocflex .blocflex__galerie {
