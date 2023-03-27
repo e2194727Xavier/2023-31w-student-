@@ -4,7 +4,7 @@
  */
 ?>
 
-<article class="note-info" ?>>
+<article class="note-info" ?>
     <?php the_title('<h1>', '</h1>'); ?>
     <?php the_content(); ?>
 
