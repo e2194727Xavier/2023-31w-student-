@@ -12,6 +12,10 @@ Mise en page avec display: grid
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   background-color: rgb(255, 255, 255);
+      .prof-dom{
+        display: flex;
+        justify-content:space-between ;
+      }
 }
 
 .site__footer {

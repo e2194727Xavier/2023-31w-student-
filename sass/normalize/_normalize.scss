@@ -14,35 +14,29 @@
     font-family: Roboto,sans-serif;
   }
 
- 
-h1 {
-  font-size: clamp(1.5rem, 5vw, 3.5rem);
-}
-
-
-h2 {
-  font-size: clamp(1.2rem, 4vw, 3rem);
-}
-
-
-h3 {
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
-}
-
-
-h4 {
-  font-size: clamp(1rem, 2.5vw, 2rem);
-}
-
-
-h5 {
-  font-size: clamp(0.9rem, 2vw, 1.5rem);
-}
-
-
-h6 {
-  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
-}
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 3rem); /* Entre 28px et 48px */
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem); /* Entre 24px et 40px */
+  }
+  
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem); /* Entre 20px et 32px */
+  }
+  
+  h4 {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Entre 16px et 24px */
+  }
+  
+  h5 {
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem); /* Entre 14px et 20px */
+  }
+  
+  h6 {
+    font-size: clamp(0.75rem, 1.25vw, 1rem); /* Entre 12px et 16px */
+  }
 
 
 p {

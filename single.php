@@ -12,8 +12,10 @@ get_header() ?>
             the_content(); 
             /* in_category() */
             $enseignant = get_field('enseignant');
-            if ($enseignant) {
-                echo '<p>Enseignant : ' . $enseignant . '</p>';
+            $domaine = get_field('domaine');
+            if ($enseignant || $domaine ) {
+                echo '<div class="prof-dom"><p>Enseignant : ' . $enseignant . '</p>';
+                echo '<p>Domaine : ' . $domaine . '</p></div>';
             }
         endwhile;    
     endif;
