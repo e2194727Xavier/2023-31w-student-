@@ -621,6 +621,9 @@ hr {
   flex: 1 0 300px;
   position: relative;
 }
+.blocflex__article .petit {
+  font-size: 14px;
+}
 
 .blocflex__article > h5, h6 {
   text-align: center;
