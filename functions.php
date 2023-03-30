@@ -63,6 +63,9 @@ add_theme_support( 'custom-logo',
                     ) );
 
 add_theme_support("custom-background",);
+
+add_theme_support( 'post-thumbnails' );
+
 function perso_menu_item_title($title, $item, $args) {
     $sigle="";
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
@@ -72,7 +75,7 @@ function perso_menu_item_title($title, $item, $args) {
     $title = substr($title, 7);
     $title ="<div class='cours__sigle'>".$sigle."</div>".
     "<p class='cours__titre'>". wp_trim_words($title, 2, ' ... ')."</p>";
-    }else if($args->menu == 'note-wp'){
+    }else if($args->menu == 'note-wp'){  /* menu == "evenement" */
         $numeroNote = substr($title, 0,2);
         if ($numeroNote[0] == '0') {
             $numeroNote = substr($numeroNote, 1, 1);
@@ -84,5 +87,42 @@ function perso_menu_item_title($title, $item, $args) {
     return $title;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
+
+////////////////////////////////////////////////////////////////////// Enregistrement d'un sidebar
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Pied de page 1', '31w-eddy-martin' ),
+        'id' => 'pied-page-1',
+        'description' => __( 'Une zone  widget pour afficher des widgets dans le pied de page.', '31w-eddy-martin' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Pied de page 2', '31w-eddy-martin' ),
+        'id' => 'pied-page-2',
+        'description' => __( 'Une zone  widget pour afficher des widgets dans le pied de page.', '31w-eddy-martin' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Pied de page 3', '31w-eddy-martin' ),
+        'id' => 'pied-page-3',
+        'description' => __( 'Une zone  widget pour afficher des widgets dans le pied de page.', '31w-eddy-martin' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
 
 

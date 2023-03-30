@@ -19,6 +19,7 @@ if (preg_match('/\((\d+h)\)/', $duree, $matches)) {
     <h5><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h5>
     <h6><?= $titre_long?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+    <p><?= the_field('enseignant')?></p>
+    <p><?= the_field('domaine')?></p>
     <p><?= $duree?></p>
-    <p><?= the_field('enseignant')?></^p>
 </article>
