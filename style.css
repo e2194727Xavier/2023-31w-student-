@@ -766,6 +766,26 @@ h3 a:hover {
   }
 }
 
+.menu__bloc .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu__bloc .menu .menu-item {
+  border: 1px solid #aaa;
+  flex: 1 0 33%;
+  list-style-type: none;
+}
+.menu__bloc .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.viewport {
+  min-height: 100vh;
+  padding: 0 3rem;
+}
+
 /* =============== Layout */
 /**
 Mise en page avec display: grid

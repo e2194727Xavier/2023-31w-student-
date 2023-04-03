@@ -1,35 +1,28 @@
-# Exercice 3 (25 points)
+# Exercice #4 (5 points)
+
 
 ### Auteur: Xavier Paulin
 
-###### L\'objectif de l'exercice #3:
+L'objectif de l'exercice #4:
+-Ajouter, gérer et utiliser des champs personnalisés
+-Ajouter trois «sidebar» dans le footer
+-Ajout d'un template de page
+-Ajout d'image mise-en-avant
+-Déployer votre projet sur le serveur Siteground
 
-- Ajouter, gérer et utiliser des champs personnalisés
-- Adapter le menu aside et le menu de l'entete 
-- Déployer votre projet sur le serveur **_Siteground_**
-
-###### L'exercice vous permettra de vous familiariser avec les champs personnalisés
-
-- Cet exercice est un premiere étape de développement du TP2
-
-
-###### Déroulement du projet
-
-> Les « **_commits_** » seront poussés dans le dépôt **_31w_**  de votre github. Dans la branche **_exer3_**
-> L\'ensemble des commits devra s\'étaler progressivement à partir de la journée de remise du devis jusqu\'à la remise finale de l'exercice #3 
-> Un minimum de 5 commits pour le thème  permettra d\'évaluer l\'évolution de votre projet
+L'exercice vous permettra de continuer à avancer votre projet de fin de session - en ajoutant quelques nouveautés :-)
+- Cet exercice est une deuxième étape de développement du TP2
+Déroulement du projet
+ Les « commits » seront poussés dans le dépôt 31w de votre github. Dans la branche exer4 L'ensemble des commits devra s'étaler progressivement à partir de la journée de remise du devis jusqu'à la remise finale de l'exercice #4 Un minimum de 5 commits pour le thème permettra d'évaluer l'évolution de votre projet
 
 ## Barème de correction sur 5 points
+1- Organisation des commits sur Github minimum 5 commits pour le thème (2 points)
 
-1. Organisation des commits sur Github minimum 5 commits  pour le thème **_(1 points)_**
+- Minimum de 5 commits étalés sur trois jours pour le thème
+- Messages clairs
+- Déploiement de votre site sur Siteground
+- Un readme.md pour le thème: auteur, titre du projet et description
 
-   - Minimum de 5 commits étalés sur trois jours pour le thème 
-   - Messages clairs
-   - Déploiement de votre site sur Siteground
-   - Un readme.md pour le thème: auteur, titre du projet et description
-
-2. Utilisation et fonctionnement des champs personnalisé **_(2 points)_**
-3. Création de template-parts pour single.php « single-cours.php » et « single-note.php » pour afficher un article cours ou note-cours **_(2 points)_** 
-
+2- Utilisation et fonctionnement des champs personnalisé, des widget, des template de page et des images mise-en-avant (3 points)
 
 ### Site wordPress sur siteground : https://aecweb20.sg-host.com/
