@@ -701,6 +701,23 @@ h3 a:hover {
   flex: 1 0 33%;
 }
 
+#menu-lien {
+  display: flex;
+  justify-content: center;
+  gap: 155px;
+}
+#menu-lien li {
+  list-style: none;
+}
+#menu-lien li a {
+  text-decoration: none;
+}
+
+.footer__infoPerso {
+  display: flex;
+  justify-content: center;
+}
+
 .menu-cours-container .menu, .menu-note-wp-container .menu {
   display: flex;
   flex-direction: row;

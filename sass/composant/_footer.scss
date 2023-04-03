@@ -18,3 +18,21 @@
           flex : 1 0 33%;
       }
   }
+
+  #menu-lien{
+    display: flex;
+    justify-content: center;
+    gap: 155px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+           
+        }
+  }
+
+  .footer__infoPerso{
+    display: flex;
+    justify-content: center;
+  }
