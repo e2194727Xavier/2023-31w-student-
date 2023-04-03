@@ -5,7 +5,7 @@
 get_header() ?>
 <main class="site__main">
     <section class="viewport">
-        <h1>tp2</h1>
+        <h1>TP2</h1>
         <h4>Auteur : Xavier P</h4>
         <h4>Cours : 31w - Introduction un gestionnaire de contenu</h4>
         <?php
