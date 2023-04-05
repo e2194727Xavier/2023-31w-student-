@@ -797,6 +797,11 @@ h3 a:hover {
   text-decoration: none;
 }
 
+.evenement__porte {
+  background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=ca");
+  background-repeat: no-repeat;
+}
+
 .viewport {
   min-height: 80vh;
 }

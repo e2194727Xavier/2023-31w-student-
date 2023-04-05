@@ -101,7 +101,8 @@ function ajouter_description_class_menu( $items, $args ) {
            
 
             // Ajouter la description et la classe personnalisée à l'élément de menu
-            $item->title .= '<span>' . $description . '</span>';
+            $item->title .= '<p>' . $description . '</p>'.
+            '<p><img src="https://s2.svgbox.net/flags-ld.svg?ic=ca&color=000000" width="32" height="32"></p>';
         }
     }
     return $items;
