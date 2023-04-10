@@ -1,9 +1,12 @@
 .menu__bloc{ // nav
-
+    
     .menu{ //ul
-         display : flex;
-         flex-wrap: wrap;
-         list-style-type: none;;
+        display : flex;
+        flex-wrap: wrap;
+        list-style-type: none;;
+        @media screen and (max-width : 1000px) {
+            flex-direction: column;
+        }
         .menu-item { //li
             flex : 1 0 33%;
             list-style-type: none;;

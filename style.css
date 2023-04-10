@@ -688,8 +688,15 @@ h3 a:hover {
 .footer__widget {
   display: flex;
   flex-direction: row;
+  gap: 10px;
+}
+@media screen and (max-width: 765px) {
+  .footer__widget {
+    flex-direction: column;
+  }
 }
 .footer__widget div {
+  margin: 0 auto;
   flex: 1 0 33%;
 }
 
@@ -787,6 +794,11 @@ h3 a:hover {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+}
+@media screen and (max-width: 1000px) {
+  .menu__bloc .menu {
+    flex-direction: column;
+  }
 }
 .menu__bloc .menu .menu-item {
   flex: 1 0 33%;
