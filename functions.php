@@ -75,8 +75,9 @@ function perso_menu_item_title($title, $item, $args) {
     $title = substr($title, 7);
     $title ="<div class='cours__sigle'>".$sigle."</div>".
     "<p class='cours__titre'>". wp_trim_words($title, 2, ' ... ')."</p>";
-    } if ($args->menu == 'evenement') {
-        
+    }if($args->menu == 'menu-evenement'){
+        $title = "<div class='menu_secondaire_evenement'></div>".
+        "<p class='evenement__titre'>". $title."</p>";
     }else if($args->menu == 'note-wp'){  /* menu == "evenement" */
         $numeroNote = substr($title, 0,2);
         if ($numeroNote[0] == '0') {
