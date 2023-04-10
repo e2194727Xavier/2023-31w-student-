@@ -75,6 +75,8 @@ function perso_menu_item_title($title, $item, $args) {
     $title = substr($title, 7);
     $title ="<div class='cours__sigle'>".$sigle."</div>".
     "<p class='cours__titre'>". wp_trim_words($title, 2, ' ... ')."</p>";
+    } if ($args->menu == 'evenement') {
+        
     }else if($args->menu == 'note-wp'){  /* menu == "evenement" */
         $numeroNote = substr($title, 0,2);
         if ($numeroNote[0] == '0') {
@@ -90,24 +92,22 @@ add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
 
 
 /* ======================================================================================= */
-
 function ajouter_description_class_menu( $items, $args ) {
     // Vérifier si le menu correspondant est celui que vous souhaitez modifier
     if ( 'evenement' === $args->menu ) {
         foreach ( $items as $item ) {
-            // Récupérer le titre, la description et la classe personnalisée
+            // Récupérer le titre et la description
             $titre = $item->title;
             $description = $item->description;
-           
 
-            // Ajouter la description et la classe personnalisée à l'élément de menu
-            $item->title .= '<p>' . $description . '</p>'.
-            '<p><img src="https://s2.svgbox.net/flags-ld.svg?ic=ca&color=000000" width="32" height="32"></p>';
+            // Ajouter la description à l'élément de menu
+            $item->title = '<a href="' . $item->url . '">' . $titre . '</a>' . '<p>' . $description . '</p>' . '<img src="https://s2.svgbox.net/flags-ld.svg?ic=ca&color=000000" width="32" height="32">';
         }
     }
     return $items;
 }
 add_filter( 'wp_nav_menu_objects', 'ajouter_description_class_menu', 10, 2 );
+
 
 ////////////////////////////////////////////////////////////////////// Enregistrement d'un sidebar
 // Enregistrer le sidebar

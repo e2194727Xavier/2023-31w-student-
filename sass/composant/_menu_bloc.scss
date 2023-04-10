@@ -21,7 +21,24 @@
 
 }
 
-.evenement__porte{
-    background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=ca");
-    background-repeat: no-repeat;
+
+#menu-evenement{
+
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    @media screen and (max-width : 450px) {
+        flex-direction: column;
+    }
+    @media screen and (min-width : 1000px) {
+        flex-direction: column;
+    }
+    li{
+        list-style: none;
+        p{
+            max-width: 25ch;
+            margin: 5px auto;
+            text-align: center;
+        }
+    }
 }

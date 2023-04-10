@@ -797,9 +797,28 @@ h3 a:hover {
   text-decoration: none;
 }
 
-.evenement__porte {
-  background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=ca");
-  background-repeat: no-repeat;
+#menu-evenement {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 450px) {
+  #menu-evenement {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #menu-evenement {
+    flex-direction: column;
+  }
+}
+#menu-evenement li {
+  list-style: none;
+}
+#menu-evenement li p {
+  max-width: 25ch;
+  margin: 5px auto;
+  text-align: center;
 }
 
 .viewport {
