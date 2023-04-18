@@ -688,6 +688,16 @@ h3 a:hover {
   gap: 10px;
 }
 
+.container_erreur .menu-cours-erreur nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_erreur .menu-note-erreur nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
 .site__footer {
   display: flex;
   flex-direction: column;

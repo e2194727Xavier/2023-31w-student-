@@ -11,5 +11,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;  
+    gap: 10px;
+    
+}
+.container_erreur{
+
+    .menu-cours-erreur{
+        nav{
+            ul{
+                display: flex;
+                flex-direction: row;
+            }
+        }  
+    }
+}
+
+
+.container_erreur{
+
+    .menu-note-erreur{
+        nav{
+            ul{
+                display: flex;
+                flex-direction: row;
+            }
+        }  
+    }
 }
