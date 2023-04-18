@@ -680,6 +680,14 @@ h3 a:hover {
   justify-content: center;
 }
 
+.container_erreur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .site__footer {
   display: flex;
   flex-direction: column;

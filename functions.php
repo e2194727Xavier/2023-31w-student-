@@ -67,9 +67,10 @@ add_theme_support("custom-background",);
 add_theme_support( 'post-thumbnails' );
 
 function perso_menu_item_title($title, $item, $args) {
-    $sigle="";
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
-    if($args->menu == 'cours') {
+   
+    if($args->menu == 'menu-secondaire-cours') {
+       
     // Modifier la longueur du titre en fonction de vos besoins
     $sigle = substr($title, 4,3);
     $title = substr($title, 7);
@@ -79,6 +80,7 @@ function perso_menu_item_title($title, $item, $args) {
         $title = "<div class='menu_secondaire_evenement'></div>".
         "<p class='evenement__titre'>". $title."</p>";
     }if($args->menu == 'note-wp'){  /* menu == "evenement" */
+
         $numeroNote = substr($title, 0,2);
         if ($numeroNote[0] == '0') {
             $numeroNote = substr($numeroNote, 1, 1);
