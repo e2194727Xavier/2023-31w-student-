@@ -78,7 +78,7 @@ function perso_menu_item_title($title, $item, $args) {
     }if($args->menu == 'menu-evenement'){
         $title = "<div class='menu_secondaire_evenement'></div>".
         "<p class='evenement__titre'>". $title."</p>";
-    }else if($args->menu == 'note-wp'){  /* menu == "evenement" */
+    }if($args->menu == 'note-wp'){  /* menu == "evenement" */
         $numeroNote = substr($title, 0,2);
         if ($numeroNote[0] == '0') {
             $numeroNote = substr($numeroNote, 1, 1);
@@ -146,5 +146,4 @@ function enregistrer_sidebar() {
 
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
-
 
