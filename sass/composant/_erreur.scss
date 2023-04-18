@@ -21,6 +21,14 @@
             ul{
                 display: flex;
                 flex-direction: row;
+                li{
+                    a{
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+
             }
         }  
     }
@@ -34,7 +42,23 @@
             ul{
                 display: flex;
                 flex-direction: row;
+                gap: 0;
+                margin: 0;
+                padding: 0;
+                width: 865px;
+                li{
+                    a{
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
             }
         }  
     }
+}
+
+
+.transparent{
+    background-color: rgb(255 255 255 / 63%);
 }

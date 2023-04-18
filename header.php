@@ -35,7 +35,7 @@
         <h2 class="site__soustitre <?=$classe?>"><?php  bloginfo('description'); ?></h2>
     </header>
     <?php 
-    if (is_front_page() == false && !is_404())
+    if (is_front_page() == false && !is_404() && !is_search())
     {
        get_template_part("template-parts/aside");
     }

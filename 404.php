@@ -3,7 +3,7 @@
     Modèle index.php représente le modèle par défaut du thème
 */
 get_header() ?>
-<main class="site__main">
+<main class=" transparent no-aside">
         <div class="container_erreur">
             <h1>Erreur 404 </h1>
             <p>Page introuvable, vous pouvez tenter une recherche</p>
